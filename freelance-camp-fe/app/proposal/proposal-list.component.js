@@ -7,8 +7,17 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
+var Proposal_1 = require("./Proposal");
 var ProposalListComponent = /** @class */ (function () {
     function ProposalListComponent() {
+        this.proposalOne = new Proposal_1.Proposal(15, 'ABC Company', 'http://portfolio.joshythorup.com', 'Ruby on Rails', 150, 120, 15, 'jthorup@gmail.com');
+        this.proposalTwo = new Proposal_1.Proposal(99, 'Shire Building Co', 'http://portfolio.joshythorup.com', 'Ruby on Rails', 150, 120, 15, 'jthorup@gmail.com');
+        this.proposalThree = new Proposal_1.Proposal(300, 'More Mordor Bridges', 'http://portfolio.joshythorup.com', 'Ruby on Rails', 150, 120, 15, 'jthorup@gmail.com');
+        this.proposals = [
+            this.proposalOne,
+            this.proposalTwo,
+            this.proposalThree
+        ];
     }
     ProposalListComponent = __decorate([
         core_1.Component({
