@@ -16,4 +16,4 @@ var Proposal = /** @class */ (function () {
 }());
 exports.Proposal = Proposal;
 // 15, 'ABC Company', 'http://portfolio.joshythorup.com', 'Ruby on Rails', 150, 120, 15, jthorup@gmail.com' 
-//# sourceMappingURL=proposal.js.map
+//# sourceMappingURL=Proposal.js.map
