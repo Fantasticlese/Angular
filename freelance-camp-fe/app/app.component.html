@@ -1,12 +1,6 @@
-<style>
-	.active {
-		background-color: red;
-	}
-</style>
-
-<nav class = "navbar navbar-fixed-top navbar-light bg-faded">
-	<div class='container'>
-		<ul class="nav navbar-nav">
+<nav class="navbar navbar-fixed-top navbar-light bg-faded nav-styles">
+	<div class="container">
+		<ul class="nav nav-navbar">
 			<li class='nav-item'>
 				<a class='nav-link' routerLink="/home" routerLinkActive="active">Home</a>
 			</li>
@@ -14,7 +8,7 @@
 				<a class='nav-link' routerLink="/documents" routerLinkActive="active">Docs</a>
 			</li>
 			<li class="nav-item dropdown">
-				<div nbbDropdown class="d-inline-block dropdown-links">
+				<div ngbDropdown class="d-inline-block dropdown-links">
 					<button class="btn btn-outline-primary" id="proposalDropdown" ngbDropdownToggle>
 						Proposals
 					</button>
@@ -28,4 +22,6 @@
 	</div>
 </nav>
 
-<router-outlet></router-outlet>
+<div class="app-body">
+	<router-outlet></router-outlet>
+</div>
